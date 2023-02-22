@@ -1,0 +1,11 @@
+# Collapsible
+####
+
+<li id="right-text">
+    <button class="btn-primary" type="button"  data-bs-toggle="collapse" data-bs-target="#coll" role="button" aria-expanded="false" aria-controls="coll">Open Collapsible</button>
+    <div class="collapse" id="coll">
+        <p>Darkmode</p>
+    </div>
+</li>
+
+###

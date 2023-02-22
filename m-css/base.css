@@ -1,0 +1,135 @@
+:root {
+    /*mint rgb(0, 255, 191)*/
+    --lmint : rgb(103, 255, 217);
+    --mint : rgb(0, 255, 191);
+    --dmint : rgb(88, 223, 189);
+    --grey : rgb(218, 218, 218);
+    --lg : rgb(245, 245, 245);
+    --wit : rgb(255, 255, 255);
+    --blck  : rgb(0, 0, 0);
+    --drmd : rgb(26, 48, 40);
+    --drmdbk : rgb(20, 34, 30);
+  
+  }
+  
+  html {
+    min-height: 100%;
+  }
+  
+  body {
+    margin: 0;
+    background-color: var(--wit);
+    min-height: 100vh;
+    display: flex;
+    flex-direction:column;
+  }
+  
+  .collapsible {
+    background-color: var(--lg);
+    color: --grey;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: center;
+    outline: none;
+    font-size: 15px;
+  }
+  
+  .active, .collapsible:hover {
+    background-color: var(--lg);
+  }
+  
+  .content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: var(--lg)1;
+  }
+  
+  .wrapper {
+    min-height: 100%;
+    margin-bottom: -100px;
+    padding-bottom: 100px;
+  }
+  
+  footer {
+    width:100%;
+    background: var(--lg);
+    margin-top: auto;
+  }
+  
+  nav {
+    background: var(--lg);
+  }
+  
+  
+  .btn-primary, .btn-primary:active, .btn-primary:visited {
+    background-color: var(--mint);
+    border-color:     var(--mint);
+  }
+  
+  .btn-primary:hover { 
+    background-color: var(--lmint);
+    border-color:     var(--lmint);
+  }
+  
+  .btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+    color: var(--blck)
+  }
+  
+  
+  /* ohne vorzeichen -> objekte */
+  p {
+    color: var(--blck);
+  }
+  
+  /* klassen -> .*/
+  /*.badge {
+    background-color: rgb(0, 255, 191)
+    ;
+  }*/
+   /* ID -> #*/
+  #one {
+    color: var(--blck);
+    font-size: 1em;
+    background-color: var(--mint);
+  }
+  
+  #two {
+    color: var(--blck);
+    text-align: center;
+    font-size: 2em;
+    background-color: var(--mint);
+  }
+  
+  #three {
+    color: var(--blck)
+  }
+
+  #four {
+    color: var(--blck);
+    text-align: center;
+    font-size: 2em;
+    background-color: var(--dmint);
+  }
+  
+  #left-text {
+    text-align: left;
+  }
+  
+  #center-text {
+    text-align: center;
+  }
+  
+  #right-text {
+    text-align: right;
+  }
+  
+  #li-right {
+    float: right;
+  }
+  
+  .dropdown-item:active {
+    background-color: var(--mint);
+  }
