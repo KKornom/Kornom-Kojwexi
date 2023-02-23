@@ -4,6 +4,7 @@
 
         <link rel="stylesheet" href="./css/bootstrap.min.css">
         <script src="js/bootstrap.min.js"></script>
+        <script src="js/base.js"></script>
         <link rel="stylesheet" href="./m-css/base.css">
     </head>
     <title>Mintomory</title>
@@ -29,19 +30,19 @@
                             </li>   
                         </ul>
                     </div>
-                    <div >
+                    <div class="navbar">
                         <ul class="navbar-nav">
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Theme
-                                </a>
-                                <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Darkmode</a></li>
-                                <li><a class="dropdown-item" href="#">Light</a></li>
-                                </ul>
-                            </li>
+                          <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Theme
+                            </a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#" id="light">Light</a></li>
+                              <li><a class="dropdown-item" href="#" id="dark">Darkmode</a></li>
+                            </ul>
+                          </li>
                         </ul>
-                    </div>
+                      </div>
                 </div>
             </nav>
 
@@ -103,13 +104,13 @@
                     <!-- The slideshow/carousel -->
                     <div class="carousel-inner">
                       <div class="carousel-item active">
-                        <img src="images\C001.png" alt="Mint01" class="d-block w-100"style="height: 500px; object-fit: cover;">
+                        <img src="images\C001.png" alt="Mint01" class="d-block w-100"style="height: 500px; object-fit: cover;" type="button">
                       </div>
                       <div class="carousel-item">
-                        <img src="images\C001.png" alt="Mint02" class="d-block w-100"style="height: 500px; object-fit: cover;">
+                        <img src="images\C001.png" alt="Mint02" class="d-block w-100"style="height: 500px; object-fit: cover;" type="button">
                       </div>
                       <div class="carousel-item">
-                        <img src="images\C001.png" alt="Mint03" class="d-block w-100"style="height: 500px; object-fit: cover;">
+                        <img src="images\C001.png" alt="Mint03" class="d-block w-100"style="height: 500px; object-fit: cover;" type="button"/>
                       </div>
                     </div>
                   
@@ -131,9 +132,6 @@
                 <h3>Kontakt</h3>
                 <p>korobejnikow.maxim@gmail.com <br>Stettiner Str. 7 <br> 34613 Schwalmstadt<br>© 2023 I-Am-Kornom-Kojwxie</p>
                 
-            </div>
-            <div id="right-text">
-                <p>|impressum|</p>
             </div>
         </footer>
     </body>

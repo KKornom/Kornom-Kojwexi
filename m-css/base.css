@@ -7,26 +7,98 @@
     --lg : rgb(245, 245, 245);
     --wit : rgb(255, 255, 255);
     --blck  : rgb(0, 0, 0);
-    --drmd : rgb(26, 48, 40);
-    --drmdbk : rgb(20, 34, 30);
-  
+    --drmd : rgb(42, 45, 51);
+    --dmnav : rgb(31, 30, 34);
+    --bg: var(--wit);
+    --nav: var(--lg);
+    --text: var(--blck);
   }
   
+
+
   html {
     min-height: 100%;
   }
   
   body {
     margin: 0;
-    background-color: var(--wit);
+    background-color: var(--bg);
     min-height: 100vh;
     display: flex;
     flex-direction:column;
   }
   
+  
+  nav {
+    background: var(--nav);
+    color: var(--text) 
+  }
+
+  nav div div ul li a {
+    color: var(--text) !important;
+  }
+
+  .dropdown-menu {
+    background: var(--nav);
+  }
+
+  .dropdown-item:hover {
+    background: var(--nav);
+  }
+
+  .navbar-brand {
+    color: var(--text) !important;
+  }
+
+  p {
+    color: var(--text) !important;
+  }
+
+  .card-text {
+    color: var(--blck) !important;
+  }
+
+  footer {
+    width:100%;
+    background: var(--nav);
+    color: var(--text);
+    margin-top: auto;
+  }
+
+  .card {
+    background: var(--nav);
+  }
+
+  .card-text {
+    color: var(--text)!important;
+  }
+
+  .card-title {
+    color: var(--text);
+  }
+
+ div div .card {
+  background: var(--nav);
+  }
+
+
+
+  .dark {
+    --bg: var(--drmd);
+    --nav: var(--dmnav);
+    --text: var(--wit);
+  }
+
+  .light {
+  --bg: var(--wit);
+  --nav: var(--lg);
+  --text: var(--blck);
+  }
+  
+
   .collapsible {
     background-color: var(--lg);
-    color: --grey;
+    color: var(--grey);
     cursor: pointer;
     padding: 18px;
     width: 100%;
@@ -53,17 +125,6 @@
     padding-bottom: 100px;
   }
   
-  footer {
-    width:100%;
-    background: var(--lg);
-    margin-top: auto;
-  }
-  
-  nav {
-    background: var(--lg);
-  }
-  
-  
   .btn-primary, .btn-primary:active, .btn-primary:visited {
     background-color: var(--mint);
     border-color:     var(--mint);
@@ -79,23 +140,23 @@
   }
   
   
-  /* ohne vorzeichen -> objekte */
-  p {
-    color: var(--blck);
-  }
-  
   /* klassen -> .*/
   /*.badge {
     background-color: rgb(0, 255, 191)
     ;
   }*/
    /* ID -> #*/
+   .badge {
+    color: var(--blck);
+    background-color: var(--mint);
+  }
+
   #one {
     color: var(--blck);
     font-size: 1em;
     background-color: var(--mint);
   }
-  
+
   #two {
     color: var(--blck);
     text-align: center;

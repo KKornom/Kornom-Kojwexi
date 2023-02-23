@@ -2,7 +2,8 @@
 <html lang="de-DE">
     <head>
         <link rel="stylesheet" href="./css/bootstrap.min.css">
-        <script src="js/Gallerie.js"></script>
+        <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+        <script src="js/base.js"></script>
         <link rel="stylesheet" href="./m-css/galerie.css">
         <script src="js/bootstrap.min.js"></script>
         <link rel="stylesheet" href="./m-css/base.css">
@@ -36,8 +37,8 @@
                                 Theme
                                 </a>
                                 <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Darkmode</a></li>
-                                <li><a class="dropdown-item" href="#">Light</a></li>
+                                <li><a class="dropdown-item" href="#" id="dark">Darkmode</a></li>
+                                <li><a class="dropdown-item" href="#" id="light">Light</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -76,7 +77,7 @@
                             <div class="carousel-item card mb-3 active">
                                     
                                 <div class="overflow-hidden" >
-                                    <img src="images\A01.png" onclick="clickimage(this)" alt="PIC01" class="card-img-top"type="button">
+                                    <img src="images\A01.png" onclick="clickimage(this)" alt="PIC01" class="card-img-top" type="button">
                                 </div>
 
                             <!-- TXT01 -->
@@ -115,7 +116,7 @@
                 <div class="col-md-4">
                     <div class="card mb-3">
                         <div class="overflow-hidden">
-                            <img src="images\Tree.png" onclick="clickimage(this)" alt="Bild 2" class="card-img-top" style="height: 413px; object-fit: cover;"type="button"/>
+                            <img src="images\Tree.png" onclick="clickimage(this)" alt="Bild 2" class="card-img-top"type="button"/>
                         </div>
                         <div class="card-body">
                             <h5 class="card-title">Icy tree</h5>
@@ -127,7 +128,7 @@
                 <div class="col-md-4">
                     <div class="card mb-3">
                         <div class="overflow-hidden">
-                            <img src="images\C001.png" onclick="clickimage(this)" alt="Bild 3" class="card-img-top" style="height: 413px; object-fit: cover;"type="button" />
+                            <img src="images\C001.png" onclick="clickimage(this)" alt="Bild 3" class="card-img-top" type="button" />
                         </div>
                         <div class="card-body">
                             <h5 class="card-title">Titel des Bildes 3</h5>
@@ -142,7 +143,7 @@
                 <div class="col-md-4">
                     <div class="card mb-3">
                         <div class="overflow-hidden">
-                            <img src="images\C001.png" onclick="clickimage(this)" alt="Bild 1" class="card-img-top" style="height: 413px; object-fit: cover;"type="button"/>
+                            <img src="images\C001.png" onclick="clickimage(this)" alt="Bild 1" class="card-img-top"type="button"/>
                         </div>
                         <div class="card-body">
                             <h5 class="card-title">Titel des Bildes 1</h5>
@@ -154,7 +155,7 @@
                 <div class="col-md-4">
                     <div class="card mb-3">
                         <div class="overflow-hidden">
-                            <img src="images\C001.png" onclick="clickimage(this)" alt="Bild 2" class="card-img-top" style="height: 413px; object-fit: cover;"type="button"/>
+                            <img src="images\C001.png" onclick="clickimage(this)" alt="Bild 2" class="card-img-top"type="button"/>
                         </div>
                         <div class="card-body">
                             <h5 class="card-title">Titeldes Bildes 2</h5>
@@ -166,7 +167,7 @@
                 <div class="col-md-4">
                     <div class="card mb-3">
                         <div class="overflow-hidden">
-                            <img src="images\C001.png" onclick="clickimage(this)" alt="Bild 3" class="card-img-top" style="height: 413px; object-fit: cover;"type="button"/>
+                            <img src="images\C001.png" onclick="clickimage(this)" alt="Bild 3" class="card-img-top"type="button"/>
                         </div>
                         <div class="card-body">
                             <h5 class="card-title">Titel des Bildes 3</h5>
@@ -182,7 +183,7 @@
                 <div class="col-md-4">
                     <div class="card mb-3">
                         <div class="overflow-hidden">
-                            <img src="images\C001.png" onclick="clickimage(this)" alt="Bild 1" class="card-img-top" style="height: 413px; object-fit: cover;"type="button"/>
+                            <img src="images\C001.png" onclick="clickimage(this)" alt="Bild 1" class="card-img-top"type="button"/>
                         </div>
                         <div class="card-body">
                             <h5 class="card-title">Titel des Bildes 1</h5>
@@ -194,7 +195,7 @@
                 <div class="col-md-4">
                     <div class="card mb-3">
                         <div class="overflow-hidden">
-                            <img src="images\C001.png" onclick="clickimage(this)" alt="Bild 2" class="card-img-top" style="height: 413px; object-fit: cover;"type="button"/>
+                            <img src="images\C001.png" onclick="clickimage(this)" alt="Bild 2" class="card-img-top"type="button"/>
                         </div>
                         <div class="card-body">
                             <h5 class="card-title">Titeldes Bildes 2</h5>
@@ -206,7 +207,7 @@
                 <div class="col-md-4">
                     <div class="card mb-3">
                         <div class="overflow-hidden">
-                            <img src="images\C001.png" onclick="clickimage(this)" alt="Bild 3" class="card-img-top" style="height: 413px; object-fit: cover;"type="button"/>
+                            <img src="images\C001.png" onclick="clickimage(this)" alt="Bild 3" class="card-img-top"type="button"/>
                         </div>
                         <div class="card-body">
                             <h5 class="card-title">Titel des Bildes 3</h5>
@@ -224,9 +225,6 @@
                 <h3>Kontakt</h3>
                 <p>korobejnikow.maxim@gmail.com <br>Stettiner Str. 7 <br> 34613 Schwalmstadt<br>© 2023 I-Am-Kornom-Kojwxie</p>
                 
-            </div>
-            <div id="right-text">
-                <p>|impressum|</p>
             </div>
         </footer>
     </body>

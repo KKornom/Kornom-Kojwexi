@@ -1,7 +1,13 @@
 .card-img-top {
+  height: 420px /*blaze it*/; 
+  object-fit: cover;
+}
+
+.card-img-top {
   transition:transform 0.25s ease;
   z-index: 0;
 }
+
 
 .card-img-top:hover {
   -webkit-transform:scale(1.5);
