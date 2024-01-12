@@ -1,0 +1,42 @@
+                    <!-- CARD01 -->
+                    <div id="pic1" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+
+                            <!-- IMG01 -->
+                            <div class="carousel-item card mb-3 active">
+                                    
+                                <div class="overflow-hidden" >
+                                    <img src="images\A01.png" onclick="clickimage(this)" alt="PIC01" class="card-img-top" type="button">
+                                </div>
+
+                            <!-- TXT01 -->
+                                <div class="card-body">
+                                    <h5 class="card-title">Adventurer Peat</h5>
+                                    <p class="card-text">A charakter inspired by <a href="https://de.wikipedia.org/wiki/Pendleton_Ward">Pendleton Ward</a>.</p>
+                                </div>
+                            </div>
+
+                            <!-- IMG02 -->
+                            <div class="carousel-item card mb-3">
+                                <div class="overflow-hidden"type="button">
+                                    <img src="images\A01-1.png" onclick="clickimage(this)" alt="PIC02" class="card-img-top"type="button">
+                                </div>
+
+                            <!-- TXT02 -->
+                                <div class="card-body">
+                                    <h5 class="card-title">Adventurer PeatV</h5>
+                                    <p class="card-text">Die Pete as a vampire.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ARROW -->
+                        <a class="carousel-control-prev" href="#pic1" role="button" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only"></span>
+                        </a>
+                        <a class="carousel-control-next" href="#pic1" role="button" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only"></span>
+                        </a>
+                    </div>
+                </div>
