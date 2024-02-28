@@ -1,3 +1,8 @@
+@media screen and (max-width: 600px) {
+    .box {
+        width: 100%;
+    }
+}
 :root {
     /*mint rgb(0, 255, 191)*/
     --lmint : rgb(103, 255, 217);
